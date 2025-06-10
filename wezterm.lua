@@ -2,14 +2,15 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 config.automatically_reload_config = true
-config.font = wezterm.font('PlemolJP Console NF Medium')
-config.font_size = 19.0
+config.font = wezterm.font('0xProto Nerd Font Mono')
+config.font_size = 18.0
 config.use_ime = true
 config.window_background_opacity = 0.70
 config.macos_window_background_blur = 80
 config.initial_cols = 135
 config.initial_rows = 45
 config.max_fps = 120
+config.color_scheme = 'Misterioso'
 
 -- タイトルバーを非表示
 config.window_decorations = "RESIZE"
@@ -34,6 +35,7 @@ config.show_new_tab_button_in_tab_bar = false
 
 -- タブ同士の境界線を非表示
 config.colors = {
+  background = "#16212c",
   cursor_fg = "#FFFFFF",
   cursor_bg = "#ff5733",
   tab_bar = {
