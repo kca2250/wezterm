@@ -2,37 +2,26 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 config.automatically_reload_config = true
-config.font = wezterm.font('JetBrainsMono Nerd Font Mono')
-config.font_size = 17.0
+config.font = wezterm.font('PlemolJP Console NF Medium')
+config.font_size = 19.0
 config.use_ime = true
-config.window_background_opacity = 0.85
-config.macos_window_background_blur = 20
-
+config.window_background_opacity = 0.70
+config.macos_window_background_blur = 80
 config.initial_cols = 135
 config.initial_rows = 45
+config.max_fps = 120
 
 -- タイトルバーを非表示
 config.window_decorations = "RESIZE"
--- タブバーの表示
--- config.show_tabs_in_tab_bar = true
+
 -- タブが一つの時は非表示
--- onfig.hide_tab_bar_if_only_one_tab = true
--- falseにするとタブバーの透過が効かなくなる
--- config.use_fancy_tab_bar = true
+config.hide_tab_bar_if_only_one_tab = true
 
 -- タブバーの透過
 config.window_frame = {
   font_size = 16.0,
   inactive_titlebar_bg = "none",
   active_titlebar_bg = "none",
-}
-
--- windowのサイズ
-config.window_padding = {
-  left = 4,
-  right = 4,
-  top = 9,
-  bottom = 0,
 }
 
 -- タブバーを背景色に合わせる
