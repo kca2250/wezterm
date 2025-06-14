@@ -23,8 +23,8 @@ config.hide_tab_bar_if_only_one_tab = false
 -- タブバーの透過
 config.window_frame = {
   font_size = 16.5,
-  inactive_titlebar_bg = "none",
-  active_titlebar_bg = "none",
+  -- inactive_titlebar_bg = "none",
+  -- active_titlebar_bg = "none",
 }
 
 -- タブの追加ボタンを非表示
