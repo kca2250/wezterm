@@ -1,6 +1,9 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
+-- windowsの場合はここを有効化
+-- config.default_prog = { "wsl.exe", "--distribution", "ubuntu", "--cd", "~" }
+
 config.automatically_reload_config = true
 config.font = wezterm.font("0xProto Nerd Font Mono")
 config.font_size = 19.0
